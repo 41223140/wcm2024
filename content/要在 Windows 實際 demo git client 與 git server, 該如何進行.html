@@ -2,7 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
-<meta property="head" content="H1">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,21 +142,140 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython<br /><h1>Replit</h1>
-<p><a href="https://replit.com">https://replit.com</a></p>
-<p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br/>./init_replit</p>
-<p dir="auto">On Replit:</p>
-<p dir="auto">.replit: python3 main.py</p>
-<p dir="auto">chmod u+x cms init_replit</p>
-<p dir="auto">./init_replit</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde_site (not needed): git submodule update --init --recursive</p>
-<p dir="auto" style="padding-left: 30px;">for cmsimde: pip install flask flask_cors bs4 lxml pelican markdown gevent</p>
-<p dir="auto">password generator: <a href="https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py">https://mde.tw/cmsite/content/Brython.html?src=https://gist.githubusercontent.com/mdecycu/b92b16621dd0246c352cf13d6463b333/raw/0bfa669750aba3abe48554509bbd43d65b6e5c82/hashlib_password_generator.py</a> </p>
-<p dir="auto"></p>
-<p dir="auto">for IPv6 only Ubuntu:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.com<br/>ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p<br/><br/>for Replit:<br/><br/>.ssh 目錄中的 config, 將 SSH session 名稱設為 github.com:<br/><br/>Host github.com<br/>User git<br/>Hostname github.co<br/>#since Replit works for IPv4, therefore no ProxyCommand setting needed<br/>#ProxyCommand /usr/bin/ncat --proxy p4.cycu.org:3128 --proxy-type http %h %p</p>
+    <div id="tipue_search_content">Git創作人的相關履歷 << <a href='Git創作人的相關履歷.html'>Previous</a> <a href='About.html'>Next</a> >> About<br /><h1>要在 Windows 實際 demo git client 與 git server, 該如何進行</h1>
+<p>在 Windows 上進行 Git client 和 Git server 的實際演示，您可以遵循以下步驟。這些步驟將帶您從安裝 Git 到設置本地和遠程存儲庫，以及進行基本的 Git 操作。</p>
+<p>安裝 Git</p>
+<ol>
+<li><strong>下載 Git</strong>: 前往 <a href="https://git-scm.com/" rel="noreferrer" target="_new">Git 官網</a> 下載適用於 Windows 的 Git 安裝包。</li>
+<li><strong>安裝 Git</strong>: 運行下載的安裝程序，按照默認設置完成安裝。這將安裝 Git Bash 和 Git GUI 兩個工具。</li>
+</ol>
+<p>設置 Git 客戶端</p>
+<ol>
+<li><strong>配置 Git</strong>:
+<ul>
+<li>打開 Git Bash。</li>
+<li>輸入以下指令設置您的用戶名和電子郵件:
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+</pre>
 <p></p>
-<p></p>
-<br />cmsimde << <a href='cmsimde.html'>Previous</a> <a href='Brython.html'>Next</a> >> Brython</div>
+</li>
+</ul>
+</li>
+</ol>
+<p>設置git伺服器</p>
+<p>有多種方式可以在 Windows 上設置 Git 服務器，這裡使用 <a href="https://gitforwindows.org/" rel="noreferrer" target="_new">Git for Windows</a> 和 <a href="https://about.gitlab.com/install/#windows" rel="noreferrer" target="_new">GitLab</a> 或 <a rel="noreferrer" target="_new">Gitea</a> 作為示例。</p>
+<h4>使用 Gitea 設置 Git 服務器</h4>
+<p>Gitea 是一個輕量級的 Git 服務器，適合在 Windows 上快速設置。</p>
+<ol>
+<li>
+<p><strong>下載 Gitea</strong>:</p>
+<ul>
+<li>前往 <a rel="noreferrer" target="_new">Gitea 官網</a> 下載適用於 Windows 的二進制文件。</li>
+</ul>
+</li>
+<li>
+<p><strong>安裝並運行 Gitea</strong>:</p>
+<ul>
+<li>將下載的二進制文件放在一個目錄中（例如 <code>C:\Gitea</code>）。</li>
+<li>打開命令提示符，導航到該目錄並運行:
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">gitea web
+</pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>配置 Gitea</strong>:</p>
+<ul>
+<li>打開瀏覽器，導航到 <code>http://localhost:3000</code>，按照屏幕上的指示完成設置。</li>
+<li>創建一個新用戶並登錄。</li>
+</ul>
+</li>
+</ol>
+<p>建立遠程存儲庫</p>
+<ol>
+<li><strong>在 Gitea 中創建存儲庫</strong>:
+<ul>
+<li>登錄到 Gitea 網頁界面。</li>
+<li>點擊 "New Repository"，創建一個新的存儲庫（例如 <code>demo-repo</code>）。</li>
+</ul>
+</li>
+</ol>
+<p>設置本地存儲庫並連接到遠程存儲庫</p>
+<ol>
+<li>
+<p><strong>創建本地存儲庫</strong>:</p>
+<ul>
+<li>打開 Git Bash。</li>
+<li>創建一個新的目錄並初始化 Git:
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>連接到遠程存儲庫</strong>:</p>
+<ul>
+<li>添加遠程存儲庫（替換 <code>&lt;username&gt;</code> 和 <code>&lt;hostname&gt;</code> 為您的 Gitea 用戶名和主機名）:
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
+<div class="overflow-y-auto p-4" dir="ltr">
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git remote add origin http://localhost:3000/&lt;username&gt;/demo-repo.git
+</pre>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<p>執行基本的 Git 操作</p>
+<ol>
+<li>
+<p><strong>添加文件並提交</strong>:</p>
+<ul>
+<li>創建一個文件:
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">echo "# Demo Repository" &gt; README.md
+</pre>
+<br/>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
+</div>
+</li>
+<li>添加文件到 Git:
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git add README.md
+</pre>
+<br/>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"></div>
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">提交更改:
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git commit -m "Initial commit"
+</pre>
+<br/><br/><br/></div>
+</div>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
+</div>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>推送到遠程存儲庫</strong>:</p>
+<ul>
+<li>推送更改到 Gitea 服務器上的遠程存儲庫:
+<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git push -u origin master
+</pre>
+<br/>
+<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
+<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<p>簡單演示的完成</p>
+<p>這樣，您已經在 Windows 上設置並運行了 Git 客戶端和服務器，並進行了基本的 Git 操作。這個設置可以用來進一步演示 Git 的其他功能，如分支、合併、衝突解決等。</p>
+<br />Git創作人的相關履歷 << <a href='Git創作人的相關履歷.html'>Previous</a> <a href='About.html'>Next</a> >> About</div>
 
     <!-- footer -->
       <div class="container">
