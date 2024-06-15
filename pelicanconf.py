@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'KMOL'
+AUTHOR = '41223140'
 SITENAME = '網際內容管理系統'
 # 不要用文章所在目錄作為類別
 USE_FOLDER_AS_CATEGORY = False
@@ -23,12 +23,14 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Nature', 'https://www.nature.com/'),
-        ('Science', 'http://www.sciencemag.org/'),
-        ('Sam Harris', 'https://www.samharris.org/'),
-        ('Andreas Wagner', 'http://www.ieu.uzh.ch/wagner/'),
-        ('American Scientist', 'https://www.americanscientist.org/'),
-        ('Scientific American', 'https://www.scientificamerican.com/'),)
+LINKS = (
+    ('Nature', 'https://www.nature.com/'),
+    ('Science', 'http://www.sciencemag.org/'),
+    ('Sam Harris', 'https://www.samharris.org/'),
+    ('Andreas Wagner', 'http://www.ieu.uzh.ch/wagner/'),
+    ('American Scientist', 'https://www.americanscientist.org/'),
+    ('Scientific American', 'https://www.scientificamerican.com/'),
+)
 
 # Social widget
 #SOCIAL = (('You can add links in your config file', '#'),('Another social link', '#'),)
@@ -58,7 +60,8 @@ SITEMAP = {
 }
 
 # search is for Tipue search
-DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives', 'search'))
+DIRECT_TEMPLATES = (('index', 'tags', 'categories', 'authors', 'archives',
+                     'search'))
 
 # for pelican-bootstrap3 theme settings
 #TAG_CLOUD_MAX_ITEMS = 50
