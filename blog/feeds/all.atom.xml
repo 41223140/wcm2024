@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-17T13:57:09+08:00</updated><entry><title>2024 W10課程整理</title><link href="./2024-Spring-w10-blog-tutorial.html" rel="alternate"></link><published>2024-04-26T11:00:00+08:00</published><updated>2024-06-17T07:45:22+08:00</updated><author><name>41223140</name></author><id>tag:None,2024-04-26:./2024-Spring-w10-blog-tutorial.html</id><summary type="html">&lt;p&gt;replit維護新的分組倉儲&lt;/p&gt;
-</summary><content type="html">&lt;p&gt;replit維護新的分組倉儲&lt;/p&gt;
-
-
-&lt;h1&gt;replit維護新的分組倉儲&lt;/h1&gt;
-&lt;p&gt;以replit來維護新的分組倉儲，需要應對問題為replit的.shh協定無法供免費使用者使用，已經透過github系統設定，現在可以直接在replit進行分組維護，&lt;/p&gt;
-&lt;p&gt;replit目前只剩下對於使用者的總資料儲存量(10G)限制，當資源存取超過上限時，需要回到github下的對應倉儲帳號進行對應手段。&lt;/p&gt;
-&lt;p&gt;新的分組專案網站：https://github.com/mdewcm2024/1astud-site&lt;/p&gt;
-&lt;p&gt;(需在teams留言字串進行加入)&lt;/p&gt;</content><category term="w10"></category><category term="網誌編寫"></category></entry><entry><title>2024 W11課程整理</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-04-26T11:00:00+08:00</published><updated>2024-06-17T13:57:09+08:00</updated><author><name>41223140</name></author><id>tag:None,2024-04-26:./2024-Spring-w11-blog-tutorial.html</id><summary type="html">&lt;p&gt;如何在網頁中加入 Brython 程式應用&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>網際內容管理系統</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-06-17T14:00:19+08:00</updated><entry><title>2024 W11課程整理</title><link href="./2024-Spring-w11-blog-tutorial.html" rel="alternate"></link><published>2024-05-03T11:00:00+08:00</published><updated>2024-06-17T14:00:19+08:00</updated><author><name>41223140</name></author><id>tag:None,2024-05-03:./2024-Spring-w11-blog-tutorial.html</id><summary type="html">&lt;p&gt;如何在網頁中加入 Brython 程式應用&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;如何在網頁中加入 Brython 程式應用&lt;/p&gt;
 
 
@@ -15,7 +7,15 @@
 &lt;p&gt;所有學員需將分組的小組組別名稱(g4)新增至評分網站中的，為置於專案目錄下，之後將每位學員的關於本課程內容心得，新增至各組別下的目錄。&lt;/p&gt;
 &lt;p&gt;這個過程中的困難點就是當多人在同時上傳(push)時，我們要如何應對。&lt;/p&gt;
 &lt;p&gt;這裡就是需要利用分支處理衝突問題，雖然在上傳時如果當下自己的版本不是最新的，一樣需要將最新的版本git pull下來，然後進入動態網站進行衝突/合併，解決完後才能夠git push上去。&lt;/p&gt;
-&lt;p&gt;分支：就是在當下的版本的另一條屬於自己的版本，比如說是原本一條的河流，突然變成兩條(甚至以上)，他們在本質上是屬於同一支源流，但每個分支出來會呈現的形式都是不同，最終都會匯聚至大海，而大海就是我們衝突裡的主流，每個人在自己的分支裡做自己想做的，最後要統整合併為一個主流，將每次上傳時都可能遇到的處理衝突問題次數降低。&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>2024 期中課程整理</title><link href="./2024-Spring-w9-blog-tutorial.html" rel="alternate"></link><published>2024-04-19T11:00:00+08:00</published><updated>2024-06-17T07:42:56+08:00</updated><author><name>41223140</name></author><id>tag:None,2024-04-19:./2024-Spring-w9-blog-tutorial.html</id><summary type="html">&lt;p&gt;期中課程整理&lt;/p&gt;
+&lt;p&gt;分支：就是在當下的版本的另一條屬於自己的版本，比如說是原本一條的河流，突然變成兩條(甚至以上)，他們在本質上是屬於同一支源流，但每個分支出來會呈現的形式都是不同，最終都會匯聚至大海，而大海就是我們衝突裡的主流，每個人在自己的分支裡做自己想做的，最後要統整合併為一個主流，將每次上傳時都可能遇到的處理衝突問題次數降低。&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>2024 W10課程整理</title><link href="./2024-Spring-w10-blog-tutorial.html" rel="alternate"></link><published>2024-04-26T11:00:00+08:00</published><updated>2024-06-17T07:45:22+08:00</updated><author><name>41223140</name></author><id>tag:None,2024-04-26:./2024-Spring-w10-blog-tutorial.html</id><summary type="html">&lt;p&gt;replit維護新的分組倉儲&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;replit維護新的分組倉儲&lt;/p&gt;
+
+
+&lt;h1&gt;replit維護新的分組倉儲&lt;/h1&gt;
+&lt;p&gt;以replit來維護新的分組倉儲，需要應對問題為replit的.shh協定無法供免費使用者使用，已經透過github系統設定，現在可以直接在replit進行分組維護，&lt;/p&gt;
+&lt;p&gt;replit目前只剩下對於使用者的總資料儲存量(10G)限制，當資源存取超過上限時，需要回到github下的對應倉儲帳號進行對應手段。&lt;/p&gt;
+&lt;p&gt;新的分組專案網站：https://github.com/mdewcm2024/1astud-site&lt;/p&gt;
+&lt;p&gt;(需在teams留言字串進行加入)&lt;/p&gt;</content><category term="w10"></category><category term="網誌編寫"></category></entry><entry><title>2024 期中課程整理</title><link href="./2024-Spring-w9-blog-tutorial.html" rel="alternate"></link><published>2024-04-19T11:00:00+08:00</published><updated>2024-06-17T07:42:56+08:00</updated><author><name>41223140</name></author><id>tag:None,2024-04-19:./2024-Spring-w9-blog-tutorial.html</id><summary type="html">&lt;p&gt;期中課程整理&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;期中課程整理&lt;/p&gt;
 
 
