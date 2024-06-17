@@ -2,7 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
-<meta property="head" content="H2">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -142,140 +142,21 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">Git創作人的相關履歷 << <a href='Git創作人的相關履歷.html'>Previous</a> <a href='W7-W8.html'>Next</a> >> W7-W8<br /><h1>要在 Windows 實際 demo git client 與 git server, 該如何進行</h1>
-<p>在 Windows 上進行 Git client 和 Git server 的實際演示，您可以遵循以下步驟。這些步驟將帶您從安裝 Git 到設置本地和遠程存儲庫，以及進行基本的 Git 操作。</p>
-<p>安裝 Git</p>
-<ol>
-<li><strong>下載 Git</strong>: 前往 <a href="https://git-scm.com/" rel="noreferrer" target="_new">Git 官網</a> 下載適用於 Windows 的 Git 安裝包。</li>
-<li><strong>安裝 Git</strong>: 運行下載的安裝程序，按照默認設置完成安裝。這將安裝 Git Bash 和 Git GUI 兩個工具。</li>
-</ol>
-<p>設置 Git 客戶端</p>
-<ol>
-<li><strong>配置 Git</strong>:
-<ul>
-<li>打開 Git Bash。</li>
-<li>輸入以下指令設置您的用戶名和電子郵件:
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git config --global user.name "Your Name"
-git config --global user.email "your.email@example.com"
-</pre>
-<p></p>
-</li>
-</ul>
-</li>
-</ol>
-<p>設置git伺服器</p>
-<p>有多種方式可以在 Windows 上設置 Git 服務器，這裡使用 <a href="https://gitforwindows.org/" rel="noreferrer" target="_new">Git for Windows</a> 和 <a href="https://about.gitlab.com/install/#windows" rel="noreferrer" target="_new">GitLab</a> 或 <a rel="noreferrer" target="_new">Gitea</a> 作為示例。</p>
-<h4>使用 Gitea 設置 Git 服務器</h4>
-<p>Gitea 是一個輕量級的 Git 服務器，適合在 Windows 上快速設置。</p>
-<ol>
-<li>
-<p><strong>下載 Gitea</strong>:</p>
-<ul>
-<li>前往 <a rel="noreferrer" target="_new">Gitea 官網</a> 下載適用於 Windows 的二進制文件。</li>
-</ul>
-</li>
-<li>
-<p><strong>安裝並運行 Gitea</strong>:</p>
-<ul>
-<li>將下載的二進制文件放在一個目錄中（例如 <code>C:\Gitea</code>）。</li>
-<li>打開命令提示符，導航到該目錄並運行:
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">gitea web
-</pre>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>配置 Gitea</strong>:</p>
-<ul>
-<li>打開瀏覽器，導航到 <code>http://localhost:3000</code>，按照屏幕上的指示完成設置。</li>
-<li>創建一個新用戶並登錄。</li>
-</ul>
-</li>
-</ol>
-<p>建立遠程存儲庫</p>
-<ol>
-<li><strong>在 Gitea 中創建存儲庫</strong>:
-<ul>
-<li>登錄到 Gitea 網頁界面。</li>
-<li>點擊 "New Repository"，創建一個新的存儲庫（例如 <code>demo-repo</code>）。</li>
-</ul>
-</li>
-</ol>
-<p>設置本地存儲庫並連接到遠程存儲庫</p>
-<ol>
-<li>
-<p><strong>創建本地存儲庫</strong>:</p>
-<ul>
-<li>打開 Git Bash。</li>
-<li>創建一個新的目錄並初始化 Git:
-<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
-<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
-</div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>連接到遠程存儲庫</strong>:</p>
-<ul>
-<li>添加遠程存儲庫（替換 <code>&lt;username&gt;</code> 和 <code>&lt;hostname&gt;</code> 為您的 Gitea 用戶名和主機名）:
-<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
-<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
-<div class="overflow-y-auto p-4" dir="ltr">
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git remote add origin http://localhost:3000/&lt;username&gt;/demo-repo.git
-</pre>
-</div>
-</div>
-</li>
-</ul>
-</li>
-</ol>
-<p>執行基本的 Git 操作</p>
-<ol>
-<li>
-<p><strong>添加文件並提交</strong>:</p>
-<ul>
-<li>創建一個文件:
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">echo "# Demo Repository" &gt; README.md
-</pre>
-<br/>
-<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
-<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
-</div>
-</li>
-<li>添加文件到 Git:
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git add README.md
-</pre>
-<br/>
-<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
-<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"></div>
-<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md">提交更改:
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git commit -m "Initial commit"
-</pre>
-<br/><br/><br/></div>
-</div>
-<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
-<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
-</div>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>推送到遠程存儲庫</strong>:</p>
-<ul>
-<li>推送更改到 Gitea 服務器上的遠程存儲庫:
-<pre class="brush:cpp;auto-links:false;toolbar:false" contenteditable="false">git push -u origin master
-</pre>
-<br/>
-<div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium">
-<div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span></span></div>
-</div>
-</li>
-</ul>
-</li>
-</ol>
-<p>簡單演示完成</p>
-<p>這樣，您已經在 Windows 上設置並運行了 Git 客戶端和服務器，並進行了基本的 Git 操作。這個設置可以用來進一步演示 Git 的其他功能，如分支、合併、衝突解決等。</p>
-<br />Git創作人的相關履歷 << <a href='Git創作人的相關履歷.html'>Previous</a> <a href='W7-W8.html'>Next</a> >> W7-W8</div>
+    <div id="tipue_search_content">W10 << <a href='W10.html'>Previous</a> <a href='期末專案小遊戲.html'>Next</a> >> 期末專案小遊戲<br /><h1>W11-W12</h1>
+<p>所有學員需將分組的小組組別名稱(g4)新增至評分網站中的，為置於專案目錄下，之後將每位學員的關於本課程內容心得，新增至各組別下的目錄。</p>
+<p>這個過程中的困難點就是當多人在同時上傳(push)時，我們要如何應對。</p>
+<p>慢慢等人上傳後自己再上傳顯然是不合效率，所以需以課程所學來應對衝突問題。</p>
+<p>這裡就是需要利用<span>分支</span>處理衝突問題，雖然在上傳時如果當下自己的版本不是最新的，一樣需要將最新的版本git pull下來，然後進入動態網站進行衝突/合併，解決完後才能夠git push上去。</p>
+<p>分支：就是在當下的版本的另一條屬於自己的版本，比如說是原本一條的河流，突然變成兩條(甚至以上)，他們在本質上是屬於同一支源流，但每個分支出來會呈現的形式都是不同，最終都會匯聚至大海，而大海就是我們衝突裡的主流，每個人在自己的分支裡做自己想做的，最後要統整合併為一個主流，將每次上傳時都可能遇到的處理衝突問題次數降低。</p>
+<p>-------------------------------------------------------------------------------------------------</p>
+<p><em><strong>1.</strong></em>開始複習加深前幾周所教學內容</p>
+<p><em><strong>2.</strong></em>評分網站在<span>git pull</span>處理要點</p>
+<p>如果自己不是最新版本，在pull後內容會顯示新增 修改的內容</p>
+<p>WSGIserver(<span>Web Server Gateway Interface</span>)：<span>具有高效、易於使用和可擴展性等特點，是 Python 中用於定義 Web 應用程序與 Web 服務器之間通信的標準界面。(<a href="https://pypi.org/project/WSGIserver/">參考</a>)</span></p>
+<p><span><em><strong>3.</strong></em>導師心得評語，修改評分網站中個人心得</span></p>
+<p><span><em><strong>4.</strong></em>提到學校網站利用<a href="https://www.php.net/">php</a>(<a href="https://zh.wikipedia.org/zh-tw/PHP"><b>P</b>HP: <b>H</b>ypertext <b>P</b>reprocessor</a>)所編寫，提到課程內容進階的關於學校網站排課系統</span></p>
+<p><span><em><strong>5.</strong></em>安裝Claude，AI程式聊天</span></p>
+<br />W10 << <a href='W10.html'>Previous</a> <a href='期末專案小遊戲.html'>Next</a> >> 期末專案小遊戲</div>
 
     <!-- footer -->
       <div class="container">
